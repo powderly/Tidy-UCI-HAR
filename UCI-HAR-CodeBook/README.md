@@ -1,7 +1,12 @@
 
-# Human Activity Recognition Preprocessing CodeBook 
+# Human Activity Recognition Preprocesed Tidy Dataset CodeBook
 
-## Identifiers
+- the Tidy Data set contains:
+  + 10299 complete rows of observations
+  + 88 variable columns (2 identifiers, 86 measurements
+- it is in a wide-format configuration
+
+## Identifier Columns
 
 - "1" "subjects" -- There are 30 unique subjects, originally in two datasets (training and testing) but they have been merged herein.
 - "2" "activities" -- There are 6 unique activities that represent the six possible states in which a subject can generate data: 
@@ -31,94 +36,94 @@ The subset of the original variables was selected for two reasons:
   + 1) they could be easily obtained using grep on the pattern "std" and "mean" within the original variable names
   + 2) they represent a standard deviation and mean calculation in each representative category: X, Y, Z, gyro, acc, jerk, mag, body, gravity, mad, max,min, sma, energy, igr, entropy, arcoeff, correlation, maxInds, freq, skew, kurtosis, bands and angle
 
-## Variables
+## Variable/Measurement Columns
 
-- "1" "tBodyAccmeanX" - a time domain mean of the body linear acceleration in X cord
-- "2" "tBodyAccmeanY" - a time domain mean of the body linear acceleration in y cord
-- "3" "tBodyAccmeanZ" - a time domain mean of the body linear acceleration in Z cord
-- "4" "tBodyAccstdX" - a time domain std of the body linear acceleration in X cord
-- "5" "tBodyAccstdY" - a time domain std of the body linear acceleration in Y cord
-- "6" "tBodyAccstdZ" - a time domain std of the body linear acceleration in Z cord
-- "7" "tGravityAccmeanX" - a time domain mean of the gravity linear acceleration in X cord
-- "8" "tGravityAccmeanY" - a time domain mean of the gravity linear acceleration in Y cord
-- "9" "tGravityAccmeanZ" - a time domain mean of the gravity linear acceleration in Z cord
-- "10" "tGravityAccstdX" - a time domain std of the gravity linear acceleration in X cord
-- "11" "tGravityAccstdY" - a time domain std of the gravity linear acceleration in Y cord
-- "12" "tGravityAccstdZ" - a time domain std of the gravity linear acceleration in Z cord
-- "13" "tBodyAccJerkmeanX" - a time domain mean of the body jerk acceleration in X cord
-- "14" "tBodyAccJerkmeanY" - a time domain  mean of the body jerk acceleration in Y cord
-- "15" "tBodyAccJerkmeanZ" - a time domain  mean of the body jerk acceleration in Z cord
-- "16" "tBodyAccJerkstdX" - a time domain  std of the body jerk acceleration in X cord
-- "17" "tBodyAccJerkstdY" - a time domain  std of the body jerk acceleration in Y cord
-- "18" "tBodyAccJerkstdZ" - a time domain  std of the body jerk acceleration in Z cord
-- "19" "tBodyGyromeanX" - a time domain mean of the body rotation in X cord
-- "20" "tBodyGyromeanY" - a time domain mean of the body  rotation in Y cord
-- "21" "tBodyGyromeanZ" - a time domain mean of the body rotation in Z cord
-- "22" "tBodyGyrostdX" - a time domain std of the body rotation in X cord
-- "23" "tBodyGyrostdY" - a time domain std of the body rotation in Y cord
-- "24" "tBodyGyrostdZ" - a time domain std of the body rotation in Z cord
-- "25" "tBodyGyroJerkmeanX" - a time domain mean of the body jerk rotation in X cord
-- "26" "tBodyGyroJerkmeanY" - a time domain mean of the body jerk rotation in Y cord
-- "27" "tBodyGyroJerkmeanZ" - a time domain mean of the body jerk rotation in Z cord
-- "28" "tBodyGyroJerkstdX" - a time domain std of the body jerk rotation in X cord
-- "29" "tBodyGyroJerkstdY" - a time domain std of the body jerk rotation in Y cord
-- "30" "tBodyGyroJerkstdZ" - a time domain std of the body jerk rotation in Z cord
-- "31" "tBodyAccMagmean" - a time domain mean of the body acceleration magnitude
-- "32" "tBodyAccMagstd" - a time domain std of the body acceleration magnitude
-- "33" "tGravityAccMagmean" - a time domain mean of the gravity acceleration magnitude
-- "34" "tGravityAccMagstd" - a time domain std of the gravity acceleration magnitude
-- "35" "tBodyAccJerkMagmean"- a time domain mean of the body jerk acceleration magnitude
-- "36" "tBodyAccJerkMagstd" - a time domain std of the body jerk acceleration magnitude
-- "37" "tBodyGyroMagmean" - a time domain mean of the body rotation magnitude
-- "38" "tBodyGyroMagstd" - a time domain std of the body rotation magnitude
-- "39" "tBodyGyroJerkMagmean" - a time domain mean of the body jerk rotation magnitude
-- "40" "tBodyGyroJerkMagstd" - a time domain std of the body jerk rotation magnitude
-- "41" "fBodyAccmeanX" - a frequency domain mean of the body linear acceleration in X cord
-- "42" "fBodyAccmeanY" - a frequency domain mean of the body linear acceleration in Y cord
-- "43" "fBodyAccmeanZ" - a frequency domain mean of the body linear acceleration in Z cord
-- "44" "fBodyAccstdX" - a frequency domain std of the body linear acceleration in X cord
-- "45" "fBodyAccstdY" - a frequency domain std of the body linear acceleration in Y cord
-- "46" "fBodyAccstdZ" - a frequency domain std of the body linear acceleration in Z cord-
-- "47" "fBodyAccmeanFreqX" - a frequency domain mean of the body linear acceleration in X Frequency
-- "48" "fBodyAccmeanFreqY" - a frequency domain mean of the body linear acceleration in Y Frequency
-- "49" "fBodyAccmeanFreqZ" - a frequency domain mean of the body linear acceleration in Z Frequency
-- "50" "fBodyAccJerkmeanX" - a frequency domain mean of the body jerk acceleration in Z cord
-- "51" "fBodyAccJerkmeanY" - a frequency domain mean of the body jerk acceleration in Z cord
-- "52" "fBodyAccJerkmeanZ" - a frequency domain mean of the body jerk acceleration in Z cord
-- "53" "fBodyAccJerkstdX" - a frequency domain std of the body jerk acceleration in X cord
-- "54" "fBodyAccJerkstdY" - a frequency domain std of the body jerk acceleration in Y cord
-- "55" "fBodyAccJerkstdZ" - a frequency domain std of the body jerk acceleration in Z cord
-- "56" "fBodyAccJerkmeanFreqX" - a frequency domain mean of the body jerk acceleration in Z Frequency
-- "57" "fBodyAccJerkmeanFreqY" - a frequency domain mean of the body jerk acceleration in Z Frequency
-- "58" "fBodyAccJerkmeanFreqZ" - a frequency domain mean of the body jerk acceleration in Z Frequency
-- "59" "fBodyGyromeanX" -  a frequency domain mean of the body rotation in X cord
-- "60" "fBodyGyromeanY" - a frequency domain mean of the body rotation in Y cord
-- "61" "fBodyGyromeanZ" - a frequency domain mean of the body rotation in Z cord
-- "62" "fBodyGyrostdX" - a frequency domain std of the body rotation in X cord
-- "63" "fBodyGyrostdY" - a frequency domain std of the body rotation in Y cord
-- "64" "fBodyGyrostdZ" - a frequency domain std of the body rotation in Z cord
-- "65" "fBodyGyromeanFreqX" - a frequency domain mean of the body rotation in X frequency
-- "66" "fBodyGyromeanFreqY" - a frequency domain mean of the body rotation in Y frequency
-- "67" "fBodyGyromeanFreqZ" - a frequency domain mean of the body rotation in Z frequency
-- "68" "fBodyAccMagmean" - a frequency domain mean of the body linear acceleration magnitude
-- "69" "fBodyAccMagstd" - a frequency domain std of the body linear acceleration magnitude
-- "70" "fBodyAccMagmeanFreq" - a frequency domain mean of the body jerk acceleration magnitude frequency
-- "71" "fBodyBodyAccJerkMagmean" - a frequency domain mean of the body jerk acceleration magnitude
-- "72" "fBodyBodyAccJerkMagstd" - a frequency domain std of the body jerk acceleration magnitude
-- "73" "fBodyBodyAccJerkMagmeanFreq" - a frequency domain mean of the body jerk acceleration magnitude frequency
-- "74" "fBodyBodyGyroMagmean" -a frequency domain mean of the body rotation magnitude 
-- "75" "fBodyBodyGyroMagstd" - a frequency domain std of the body rotation magnitude 
-- "76" "fBodyBodyGyroMagmeanFreq" - a frequency domain mean of the body rotation magnitude frequency
-- "77" "fBodyBodyGyroJerkMagmean" - a frequency domain mean of the body jerk rotation magnitude
-- "78" "fBodyBodyGyroJerkMagstd" -  a frequency domain std of the body jerk rotation magnitude
-- "79" "fBodyBodyGyroJerkMagmeanFreq" - a frequency domain mean of the body jerk rotation magnitude frequency
-- "80" "angletBodyAccMeangravity" - a frequency domain mean of the body jerk rotation magnitude
-- "81" "angletBodyAccJerkMeangravityMean" - the angular vector of the body jerk mean over the mean of gravity
-- "82" "angletBodyGyroMeangravityMean" - the angular vector of the body rotation mean over the mean of gravity
-- "83" "angletBodyGyroJerkMeangravityMean" - the angular vector of the body jerk rotation mean over the mean of gravity
-- "84" "angleXgravityMean" - the mean of the angular vector of gravity in the X coordinate
-- "85" "angleYgravityMean" - the mean of the angular vector of gravity in the Y coordinate
-- "86" "angleZgravityMean" - the mean of the angular vector of gravity in the Z coordinate
+- "3" "tBodyAccmeanX" - a time domain mean of the body linear acceleration in X cord
+- "4" "tBodyAccmeanY" - a time domain mean of the body linear acceleration in y cord
+- "5" "tBodyAccmeanZ" - a time domain mean of the body linear acceleration in Z cord
+- "6" "tBodyAccstdX" - a time domain std of the body linear acceleration in X cord
+- "7" "tBodyAccstdY" - a time domain std of the body linear acceleration in Y cord
+- "8" "tBodyAccstdZ" - a time domain std of the body linear acceleration in Z cord
+- "9" "tGravityAccmeanX" - a time domain mean of the gravity linear acceleration in X cord
+- "10" "tGravityAccmeanY" - a time domain mean of the gravity linear acceleration in Y cord
+- "11" "tGravityAccmeanZ" - a time domain mean of the gravity linear acceleration in Z cord
+- "12" "tGravityAccstdX" - a time domain std of the gravity linear acceleration in X cord
+- "13" "tGravityAccstdY" - a time domain std of the gravity linear acceleration in Y cord
+- "14" "tGravityAccstdZ" - a time domain std of the gravity linear acceleration in Z cord
+- "15" "tBodyAccJerkmeanX" - a time domain mean of the body jerk acceleration in X cord
+- "16" "tBodyAccJerkmeanY" - a time domain  mean of the body jerk acceleration in Y cord
+- "17" "tBodyAccJerkmeanZ" - a time domain  mean of the body jerk acceleration in Z cord
+- "18" "tBodyAccJerkstdX" - a time domain  std of the body jerk acceleration in X cord
+- "19" "tBodyAccJerkstdY" - a time domain  std of the body jerk acceleration in Y cord
+- "20" "tBodyAccJerkstdZ" - a time domain  std of the body jerk acceleration in Z cord
+- "21" "tBodyGyromeanX" - a time domain mean of the body rotation in X cord
+- "22" "tBodyGyromeanY" - a time domain mean of the body  rotation in Y cord
+- "23" "tBodyGyromeanZ" - a time domain mean of the body rotation in Z cord
+- "24" "tBodyGyrostdX" - a time domain std of the body rotation in X cord
+- "25" "tBodyGyrostdY" - a time domain std of the body rotation in Y cord
+- "26" "tBodyGyrostdZ" - a time domain std of the body rotation in Z cord
+- "27" "tBodyGyroJerkmeanX" - a time domain mean of the body jerk rotation in X cord
+- "28" "tBodyGyroJerkmeanY" - a time domain mean of the body jerk rotation in Y cord
+- "29" "tBodyGyroJerkmeanZ" - a time domain mean of the body jerk rotation in Z cord
+- "30" "tBodyGyroJerkstdX" - a time domain std of the body jerk rotation in X cord
+- "31" "tBodyGyroJerkstdY" - a time domain std of the body jerk rotation in Y cord
+- "32" "tBodyGyroJerkstdZ" - a time domain std of the body jerk rotation in Z cord
+- "33" "tBodyAccMagmean" - a time domain mean of the body acceleration magnitude
+- "34" "tBodyAccMagstd" - a time domain std of the body acceleration magnitude
+- "35" "tGravityAccMagmean" - a time domain mean of the gravity acceleration magnitude
+- "36" "tGravityAccMagstd" - a time domain std of the gravity acceleration magnitude
+- "37" "tBodyAccJerkMagmean"- a time domain mean of the body jerk acceleration magnitude
+- "38" "tBodyAccJerkMagstd" - a time domain std of the body jerk acceleration magnitude
+- "39" "tBodyGyroMagmean" - a time domain mean of the body rotation magnitude
+- "40" "tBodyGyroMagstd" - a time domain std of the body rotation magnitude
+- "41" "tBodyGyroJerkMagmean" - a time domain mean of the body jerk rotation magnitude
+- "42" "tBodyGyroJerkMagstd" - a time domain std of the body jerk rotation magnitude
+- "43" "fBodyAccmeanX" - a frequency domain mean of the body linear acceleration in X cord
+- "44" "fBodyAccmeanY" - a frequency domain mean of the body linear acceleration in Y cord
+- "45" "fBodyAccmeanZ" - a frequency domain mean of the body linear acceleration in Z cord
+- "46" "fBodyAccstdX" - a frequency domain std of the body linear acceleration in X cord
+- "47" "fBodyAccstdY" - a frequency domain std of the body linear acceleration in Y cord
+- "48" "fBodyAccstdZ" - a frequency domain std of the body linear acceleration in Z cord-
+- "49" "fBodyAccmeanFreqX" - a frequency domain mean of the body linear acceleration in X Frequency
+- "50" "fBodyAccmeanFreqY" - a frequency domain mean of the body linear acceleration in Y Frequency
+- "51" "fBodyAccmeanFreqZ" - a frequency domain mean of the body linear acceleration in Z Frequency
+- "52" "fBodyAccJerkmeanX" - a frequency domain mean of the body jerk acceleration in Z cord
+- "53" "fBodyAccJerkmeanY" - a frequency domain mean of the body jerk acceleration in Z cord
+- "54" "fBodyAccJerkmeanZ" - a frequency domain mean of the body jerk acceleration in Z cord
+- "55" "fBodyAccJerkstdX" - a frequency domain std of the body jerk acceleration in X cord
+- "56" "fBodyAccJerkstdY" - a frequency domain std of the body jerk acceleration in Y cord
+- "57" "fBodyAccJerkstdZ" - a frequency domain std of the body jerk acceleration in Z cord
+- "58" "fBodyAccJerkmeanFreqX" - a frequency domain mean of the body jerk acceleration in Z Frequency
+- "59" "fBodyAccJerkmeanFreqY" - a frequency domain mean of the body jerk acceleration in Z Frequency
+- "50" "fBodyAccJerkmeanFreqZ" - a frequency domain mean of the body jerk acceleration in Z Frequency
+- "61" "fBodyGyromeanX" -  a frequency domain mean of the body rotation in X cord
+- "62" "fBodyGyromeanY" - a frequency domain mean of the body rotation in Y cord
+- "63" "fBodyGyromeanZ" - a frequency domain mean of the body rotation in Z cord
+- "64" "fBodyGyrostdX" - a frequency domain std of the body rotation in X cord
+- "65" "fBodyGyrostdY" - a frequency domain std of the body rotation in Y cord
+- "66" "fBodyGyrostdZ" - a frequency domain std of the body rotation in Z cord
+- "67" "fBodyGyromeanFreqX" - a frequency domain mean of the body rotation in X frequency
+- "68" "fBodyGyromeanFreqY" - a frequency domain mean of the body rotation in Y frequency
+- "69" "fBodyGyromeanFreqZ" - a frequency domain mean of the body rotation in Z frequency
+- "70" "fBodyAccMagmean" - a frequency domain mean of the body linear acceleration magnitude
+- "71" "fBodyAccMagstd" - a frequency domain std of the body linear acceleration magnitude
+- "72" "fBodyAccMagmeanFreq" - a frequency domain mean of the body jerk acceleration magnitude frequency
+- "73" "fBodyBodyAccJerkMagmean" - a frequency domain mean of the body jerk acceleration magnitude
+- "74" "fBodyBodyAccJerkMagstd" - a frequency domain std of the body jerk acceleration magnitude
+- "75" "fBodyBodyAccJerkMagmeanFreq" - a frequency domain mean of the body jerk acceleration magnitude frequency
+- "76" "fBodyBodyGyroMagmean" -a frequency domain mean of the body rotation magnitude 
+- "77" "fBodyBodyGyroMagstd" - a frequency domain std of the body rotation magnitude 
+- "78" "fBodyBodyGyroMagmeanFreq" - a frequency domain mean of the body rotation magnitude frequency
+- "79" "fBodyBodyGyroJerkMagmean" - a frequency domain mean of the body jerk rotation magnitude
+- "80" "fBodyBodyGyroJerkMagstd" -  a frequency domain std of the body jerk rotation magnitude
+- "81" "fBodyBodyGyroJerkMagmeanFreq" - a frequency domain mean of the body jerk rotation magnitude frequency
+- "82" "angletBodyAccMeangravity" - a frequency domain mean of the body jerk rotation magnitude
+- "83" "angletBodyAccJerkMeangravityMean" - the angular vector of the body jerk mean over the mean of gravity
+- "84" "angletBodyGyroMeangravityMean" - the angular vector of the body rotation mean over the mean of gravity
+- "85" "angletBodyGyroJerkMeangravityMean" - the angular vector of the body jerk rotation mean over the mean of gravity
+- "86" "angleXgravityMean" - the mean of the angular vector of gravity in the X coordinate
+- "87" "angleYgravityMean" - the mean of the angular vector of gravity in the Y coordinate
+- "88" "angleZgravityMean" - the mean of the angular vector of gravity in the Z coordinate
 
 ## Basic Components of Motion
 
