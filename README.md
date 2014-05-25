@@ -14,7 +14,7 @@ based on the work raw dataset of:
 ## Software Dependency
 - In this git repo an R script (run_analysis.R) and a dataset (UCI HAR Dataset) are provided.
 - You can download and unzip the github repo master zip and keep the directory structure as is
-- You will need to download and install [Hadley Wickham's](http://had.co.nz/) Reshape2 R package. You can do so using R or RStudio using the following code 
+- **You will need to download and install [Hadley Wickham's](http://had.co.nz/) Reshape2 R package.** You can do so using R or RStudio using the following code 
 ```R
  install.packages("reshape2")
  library("reshape2")
@@ -28,17 +28,18 @@ based on the work raw dataset of:
 - If you do not it will automatically download the dataset from the following address and unzip it in your R/RStudio working directory
 - You can get the dataset at the following URL: [http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
-## What the script does
-- run_analysis is an R script that: 
-0. downloads and unzips (if needed) a dataset of human actitivy as measured by a samsung smartphone 6DOF gyro and accelerometer
-1. takes a directory of sensor training and testing data and their derivative calculations and merges them into a single file 
-2. Converts them into a wide-format data set ordered by "subject" identifier and additionally ordered by "activity" identifier
-3. Improves readibility by using a single variable per column and variable names that folllow R conventions (camelNotation) according to the [Google R Stylebook] of best practices (https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml)
-4. Translates a numerical activity key into english language activity descriptions using.notation 
-5. Subset the list of 500+ variables to a subset of variables that includes all standard deviation and mean calculations by grepping "std" and "mean" patterns
-6. writes the tidy data set to a data.table txt file, called tidy.final.txt                              
-7. Additionally gives a use case examples by melting and casting the dataset to provide a mean calculations for each variable by each possible combination of the identifiers "subject" and "activity" 
-8. This mean melt/cast dataset is also written to a data.table txt file, called tidy_avg.txt  
+## What does the script do:
+
+- run_analysis.R is an R script that: 
+  1. downloads and unzips (if needed) a dataset of human actitivy as measured by a samsung smartphone 6DOF gyro and accelerometer
+  2. takes a directory of sensor training and testing data and their derivative calculations and merges them into a single file 
+  3. Converts them into a wide-format data set ordered by "subject" identifier and additionally ordered by "activity" identifier
+  4. Improves readibility by using a single variable per column and variable names that folllow R conventions (camelNotation) according to the [Google R stylebook] of best practices (https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml)..
+  5. Translates a numerical activity key into english language activity descriptions using.notation 
+  6. Subset the list of 500+ variables to a subset of variables that includes all standard deviation and mean calculations by grepping "std" and "mean" patterns
+  7. writes the tidy data set to a data.table txt file, called tidy.final.txt                              
+  8. Additionally gives a use case examples by melting and casting the dataset to provide a mean calculations for each variable by each possible combination of the identifiers "subject" and "activity" 
+  9. This mean melt/cast dataset is also written to a data.table txt file, called tidy_avg.txt  
 
 ## How does the script work
                                                                   
@@ -60,14 +61,14 @@ based on the work raw dataset of:
 ```
                 
 - Opens the following data files: 
--- "./UCI HAR Dataset/features.txt"
--- "./UCI HAR Dataset/activity_labels.txt"
--- "./UCI HAR Dataset/train/X_train.txt"
--- "./UCI HAR Dataset/test/X_test.txt"
--- "./UCI HAR Dataset/train/y_train.txt"
--- "./UCI HAR Dataset/train/subject_train.txt"
--- "./UCI HAR Dataset/test/y_test.txt"
--- "./UCI HAR Dataset/test/subject_test.txt"
+  + "./UCI HAR Dataset/features.txt"
+  + "./UCI HAR Dataset/activity_labels.txt"
+  + "./UCI HAR Dataset/train/X_train.txt"
+  + "./UCI HAR Dataset/test/X_test.txt"
+  + "./UCI HAR Dataset/train/y_train.txt"
+  +	"./UCI HAR Dataset/train/subject_train.txt"
+  + "./UCI HAR Dataset/test/y_test.txt"
+  + "./UCI HAR Dataset/test/subject_test.txt"
 
 ```R
 		##---OPEN VARIABLE AND ACTIVITY LABELS
