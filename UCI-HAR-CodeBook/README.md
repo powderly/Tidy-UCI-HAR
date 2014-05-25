@@ -1,5 +1,8 @@
 
-# Human Activity Recognition Preprocesed Tidy Dataset CodeBook
+# Human Activity Recognition Preproccesed Tidy Dataset CodeBook
+James Powderly
+**based on the original codebook for the UCI HAR Dataset** 
+>by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto. Smartlab - Non Linear Complex Systems >Laboratory DITEN - Universit‡ degli Studi di Genova. Via Opera Pia 11A, I-16145, Genoa, Italy. >activityrecognition@smartlab.ws www.smartlab.ws
 
 - the Tidy Data set contains:
   + 10299 complete rows of observations
