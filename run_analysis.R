@@ -10,6 +10,7 @@
 ## 7. out puts that tidy data set to a txt data.table                              ##
 ## 8. uses reshape2's melt and cast to take the mean of each variable by subject   ##
 ## and activity                                                                    ##
+## source by James Powderly                                                        ##
 ##---------------------------------------------------------------------------------##
 run_analysis <- function(){
         
